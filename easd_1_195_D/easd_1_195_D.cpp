@@ -40,3 +40,12 @@ void input() {
 		cin >> wil[i];
 	}
 }
+
+void swap(int x, int y)
+{
+	int temp;
+	temp = wil[x];
+	wil[x] = wil[y];
+	wil[y] = temp;
+}
+
