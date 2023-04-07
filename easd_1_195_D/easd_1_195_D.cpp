@@ -17,3 +17,16 @@ int wil[34];
 int cmp_count = 0;
 int mov_count = 0;
 int n;
+
+void input() {
+	while (true)
+	{
+		cout << "Masukkan panjang elemen array: ";
+		cin >> n;
+
+		if (n <= 34)
+			break;
+		else
+			cout << "Maksimum panjang elemen array adalah 34" << endl;
+	}
+}
