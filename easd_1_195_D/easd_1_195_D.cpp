@@ -49,3 +49,39 @@ void swap(int x, int y)
 	wil[y] = temp;
 }
 
+void selectionsort(int high, int min_index)
+{
+	int pivot, i, WM;
+	if (min_index > high)
+		return;
+
+	pivot = wil[high];
+	WM = min_index;
+	i = high;
+
+	while (WM <= i)
+	{
+		while ((wil[i] > pivot) && (i >= min_index))
+		{
+			i--;
+			cmp_count++;
+		}
+		cmp_count++;
+
+		while ((wil[WM] <= pivot) && (WM <= high))
+		{
+			WM++;
+			cmp_count++;
+		}
+		cmp_count++;
+
+		if (wil[WM] < wil[min_index])
+		{
+			swap(i, WM);
+			mov_count++;
+		}
+	}
+	selectionsort(high, WM + 1);
+	selectionsort(n - 1, min_index)
+}
+
