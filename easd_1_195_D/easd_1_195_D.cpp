@@ -5,3 +5,6 @@
 //3. Kecepatan mesin, sistem operasi, compiler, bahasa pemrograman, ukuran data yang diinput.
 
 //4. Quick sort, karena pengerjaan lebih sederhana, efisien sehingga tidak membutuhkan waktu banyak, dan data yang diinput ukurannya kecil
+
+//5. Quadratic : bubble sort, insertion sort, merge sort.
+//   Loglinear : selection sort, shell sort, quick  sort.
