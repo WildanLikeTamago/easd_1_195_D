@@ -8,3 +8,12 @@
 
 //5. Quadratic : bubble sort, insertion sort, merge sort.
 //   Loglinear : selection sort, shell sort, quick  sort.
+
+//6. Algoritma selection sort
+#include <iostream>
+using namespace std;
+
+int wil[34];
+int cmp_count = 0;
+int mov_count = 0;
+int n;
