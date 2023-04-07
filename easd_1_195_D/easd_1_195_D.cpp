@@ -82,6 +82,28 @@ void selectionsort(int high, int min_index)
 		}
 	}
 	selectionsort(high, WM + 1);
-	selectionsort(n - 1, min_index)
+	selectionsort(n - 1, min_index);
 }
 
+void display() {
+	cout << "\n====================" << endl;
+	cout << "\nArray yang disortir" << endl;
+	cout << "\n====================" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << wil[i] << " ";
+	}
+	cout << "\nNomor perbandingan: " << cmp_count << endl;
+	cout << "Nomor pergerakan data: " << mov_count << endl;
+}
+
+int main()
+{
+	input();
+	selectionsort(0, n - 1);
+	display();
+	system("pause");
+
+	return 0;
+}
