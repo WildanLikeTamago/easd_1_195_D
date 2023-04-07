@@ -29,4 +29,14 @@ void input() {
 		else
 			cout << "Maksimum panjang elemen array adalah 34" << endl;
 	}
+
+	cout << "\n======================" << endl;
+	cout << "\nMasukkan elemen array" << endl;
+	cout << "\n======================" << endl;
+
+	for (int i = 0; i < n; i++)
+	{
+		cout << "<" << (i + 1) << ">";
+		cin >> wil[i];
+	}
 }
